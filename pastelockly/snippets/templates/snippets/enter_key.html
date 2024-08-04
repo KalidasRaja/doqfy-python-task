@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Secret Key</title>
+</head>
+<body>
+    <h1>Enter Secret Key</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="key" placeholder="Enter the secret key">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

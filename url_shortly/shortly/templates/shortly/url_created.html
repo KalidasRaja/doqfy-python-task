@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Short URL Created</title>
+</head>
+<body>
+    <h1>Your Short URL</h1>
+    <p>Short URL: <a href="/{{ short_code }}/">{{ request.build_absolute_uri }}{{ short_code }}/</a></p>
+    <a href="/">Create another</a>
+</body>
+</html>
